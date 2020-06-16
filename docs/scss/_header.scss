@@ -1,0 +1,18 @@
+.header {
+    padding: 9px 0;
+    background-color: var(--color-primary);
+
+    &__info {
+        @include font(1.5rem, 900, var(--color-yellow));
+        margin-left: 60px;
+
+        &:first-child {
+            margin-left: 70px;
+        }
+    }
+
+    &__link {
+        @include font(1.5rem, 100, var(--color-yellow));
+        margin-left: 50px;
+    }
+}

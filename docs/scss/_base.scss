@@ -1,0 +1,33 @@
+:root {
+	--color-primary: #58696B;
+    --color-primary-light: #2B8994;
+    --color-primary-dark: #026071;
+    --color-yellow: #EFB55D;
+    --color-white: #FFF;
+    --color-blue: #2B8994;
+    --color-grey: #424342;
+    --color-grey-light: #5E5F61;
+    --shadow: 0px 16px 24px #00000029;
+} 
+
+.container {
+    max-width: 1648px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}

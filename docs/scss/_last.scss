@@ -1,0 +1,23 @@
+.last-news {
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+    padding: 17px 0;
+    margin-bottom: 80px;
+
+    &__left,
+    &__right {
+        padding: 0;
+    }
+
+    &__caption {
+        @include font(3rem, 500, var(--color-white));
+    }
+    
+    &__text {
+        @include font(2.4rem, 700, var(--color-white));
+        margin: 0;
+    }
+
+    &__link {
+        @include font(2.2rem, 100, var(--color-white));
+    }
+}

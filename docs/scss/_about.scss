@@ -1,0 +1,42 @@
+.about {
+    margin-bottom: 185px;
+
+    &__left,
+    &__right {
+        padding-left: 0;
+    }
+
+    &__caption {
+        @include font(4rem, 100, var(--color-grey));
+        margin-bottom: 15px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--color-blue);
+            height: 4px;
+            width: 120px;
+            bottom: 70px;
+            border-radius: 20px;
+        }
+    }
+
+    &__secondary-caption {
+        @include font(3rem, 100, var(--color-blue));
+        margin-bottom: 130px;
+    }
+
+    &__mail,
+    &__number {
+        @include font(2.2rem, 100, var(--color-blue));
+    }
+
+    &__text {
+        @include font(2.2rem, 100, var(--color-grey));
+
+        &:first-child {
+            margin-bottom: 27px;
+        }
+    }
+}

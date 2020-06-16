@@ -1,0 +1,36 @@
+.awards {
+    margin-bottom: 185px;
+    
+    &__caption {
+        @include font(4rem, 100, var(--color-grey));
+        margin-bottom: 15px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--color-blue);
+            height: 4px;
+            width: 120px;
+            bottom: 70px;
+            left: 45px;
+            border-radius: 20px;
+        }
+    }
+
+    &__text {
+        @include font(3rem, 100, var(--color-blue));
+        margin-bottom: 88px;
+    }
+
+    &__wrapper {
+        padding: 0 90px;
+    }
+
+    &__card {
+        box-shadow: var(--shadow);
+        border-radius: 15px;
+        padding: 10px 30px;
+        margin-bottom: 35px;
+    }
+}

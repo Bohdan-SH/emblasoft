@@ -1,0 +1,82 @@
+.connect {
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+    padding: 195px 0 315px 0;
+
+    &__left {
+        padding-right: 0;
+
+        div {
+            margin-left: 260px;
+        }
+    }
+
+    &__right {
+        padding: 0;
+
+        div {
+            margin-left: 60px;
+        }
+    }
+    
+    &__caption {
+        @include font(4rem, 100, var(--color-white));
+        position: relative;
+        margin-bottom: 35px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--color-white);
+            height: 4px;
+            width: 120px;
+            bottom: 70px;
+            border-radius: 20px;
+        } 
+    }
+
+    &__form-caption {
+        @extend .connect__caption;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        @include font(2.2rem, 100, var(--color-white));
+        padding-right: 50px;
+        margin-bottom: 215px;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        @include font(2.2rem, 100, var(--color-white));
+        margin-bottom: 45px;
+    }
+
+    &__mail {
+        @include font(2.2rem, 100, var(--color-white));
+
+        span {
+            color: var(--color-yellow);
+        }
+    }
+
+    &__input {
+        @include font(2rem, 100, var(--color-white));
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid var(--color-white);
+        margin-bottom: 25px;
+        padding: 15px 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            @include font(2rem, 100, var(--color-white));
+        }
+    }
+}
